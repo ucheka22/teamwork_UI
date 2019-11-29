@@ -1,0 +1,46 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+
+.Reactions {
+	display: flex;
+	width: 80%;
+	margin-top: 12px;
+}
+.Reactions span {
+	display: inline-block;
+	margin-right: 40px;
+	text-align: center;
+	color: #424242;
+	padding: 2px 2px;
+	border-radius: 2px solid var(--light);
+	background-color: var(--light);
+}
+@media screen and (max-width: 640px) {
+	Reactions {
+		width: 94%;
+	}
+}
+@media screen and (max-width: 460px) {
+	.Reactions span {
+		margin-right: 10px;
+	}
+}
+@media screen and (max-width: 300px) {
+	.Reactions {
+		width: 96%;
+	}
+}

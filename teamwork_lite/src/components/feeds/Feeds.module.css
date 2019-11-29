@@ -1,0 +1,26 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.lists {
+	width: 50%;
+	margin-top: 40px;
+}
+@media screen and (max-width: 840px) {
+	.lists {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 520px) {
+	.lists {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 460px) {
+	.lists {
+		width: 100%;
+		margin: 40px 10px 0px 10px;
+		padding: 0px 20px;
+	}
+}

@@ -1,0 +1,93 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+
+.container {
+	width: 100%;
+	height: calc(100vh);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 60px;
+	/* align-items: center; */
+}
+.formContainer {
+	width: 60%;
+}
+.formContainer h2 {
+	color: var(--info);
+}
+.formContainer h2,
+.formContainer p {
+	text-align: center;
+}
+.formContainer form {
+	margin-top: 20px;
+}
+
+.formContainer form div {
+	display: flex;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid var(--info);
+	margin: 16px 0px;
+}
+.formContainer form div i {
+	padding: 8px 0px;
+	min-width: 40px;
+	text-align: center;
+	color: var(--info);
+}
+.formContainer form div input {
+	width: 100%;
+	border: none;
+	padding: 8px 4px;
+	outline: none;
+}
+.formContainer form div input::placeholder {
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--muted);
+}
+.btn {
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 4px 4px;
+	text-align: center;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 500;
+	background-color: var(--info);
+	transition: 0.5s background-color;
+}
+.btn:hover {
+	background-color: var(--primary);
+}
+.forgottenPassword {
+	width: 100%;
+	border-top: 1px solid var(--success);
+	margin: 20px 0px;
+	padding: 20px 0px;
+	display: block;
+	color: var(--muted);
+	text-align: center;
+}
+@media screen and (max-width: 330px) {
+	.btn {
+		font-size: 1rem;
+	}
+}
