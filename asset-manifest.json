@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/teamwork_UI/static/css/main.157ed38d.chunk.css",
+    "main.css": "/teamwork_UI/static/css/main.a459d696.chunk.css",
     "main.js": "/teamwork_UI/static/js/main.6a4bb149.chunk.js",
     "main.js.map": "/teamwork_UI/static/js/main.6a4bb149.chunk.js.map",
     "runtime-main.js": "/teamwork_UI/static/js/runtime-main.43ed25bf.js",
@@ -8,9 +8,9 @@
     "static/js/2.9b3bf462.chunk.js": "/teamwork_UI/static/js/2.9b3bf462.chunk.js",
     "static/js/2.9b3bf462.chunk.js.map": "/teamwork_UI/static/js/2.9b3bf462.chunk.js.map",
     "index.html": "/teamwork_UI/index.html",
-    "precache-manifest.8514a23de63c41abb61ed4faa34a07a7.js": "/teamwork_UI/precache-manifest.8514a23de63c41abb61ed4faa34a07a7.js",
+    "precache-manifest.4dbf2e6fb87a0c62d0b08aa02f7fc6d8.js": "/teamwork_UI/precache-manifest.4dbf2e6fb87a0c62d0b08aa02f7fc6d8.js",
     "service-worker.js": "/teamwork_UI/service-worker.js",
-    "static/css/main.157ed38d.chunk.css.map": "/teamwork_UI/static/css/main.157ed38d.chunk.css.map",
+    "static/css/main.a459d696.chunk.css.map": "/teamwork_UI/static/css/main.a459d696.chunk.css.map",
     "static/media/MrBean.gif": "/teamwork_UI/static/media/MrBean.c55b2c3b.gif",
     "static/media/facebook.png": "/teamwork_UI/static/media/facebook.892b3f33.png",
     "static/media/twitter.png": "/teamwork_UI/static/media/twitter.9a513524.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.43ed25bf.js",
     "static/js/2.9b3bf462.chunk.js",
-    "static/css/main.157ed38d.chunk.css",
+    "static/css/main.a459d696.chunk.css",
     "static/js/main.6a4bb149.chunk.js"
   ]
 }
