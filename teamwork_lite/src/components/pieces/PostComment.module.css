@@ -53,6 +53,10 @@
 	color: #bdbdbd;
 	background-color: transparent;
 }
+.btn:hover {
+	background: var(--info);
+	color: var(--light);
+}
 @media screen and (max-width: 320px) {
 	.postcomment textarea {
 		padding: 16px 0px 0px 10px;
