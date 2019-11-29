@@ -1,0 +1,63 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+.postcomment {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+.postcomment textarea,
+.postcomment img {
+	display: inline-block;
+	margin-right: 14px;
+}
+
+.postcomment img {
+	width: 36px;
+	height: 36px;
+}
+.postcomment textarea {
+	border: 2px solid #eeeeee;
+	outline: none;
+	border-radius: 26px;
+	padding: 16px 0px 0px 10px;
+	width: 60%;
+	min-height: 100px;
+	/* background-color: #eeeeee; */
+}
+.postcomment textarea::placeholder {
+	font-size: 16px;
+	font-weight: 500;
+	color: #bdbdbd;
+}
+.btn {
+	border: 1px solid #eeeeee;
+	outline: none;
+	width: 40px;
+	height: 36px;
+	border-radius: 4px;
+	align-self: center;
+	color: #bdbdbd;
+	background-color: transparent;
+}
+@media screen and (max-width: 320px) {
+	.postcomment textarea {
+		padding: 16px 0px 0px 10px;
+		width: 80%;
+		min-height: 100px;
+		/* background-color: #eeeeee; */
+	}
+}

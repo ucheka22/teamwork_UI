@@ -1,0 +1,54 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+
+.articleList {
+	display: flex;
+	min-height: 160px;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 10px 4px#edf0f1;
+	padding: 10px 0px 10px 10px;
+}
+.readmore {
+	/* background-color: var(--danger); */
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 2px;
+	border-radius: 2px;
+	display: inline-block;
+	color: var(--danger);
+}
+.info {
+	display: flex;
+	width: 40%;
+}
+.info img {
+	width: 24px;
+	height: 24px;
+}
+.info img,
+.info span,
+.info small {
+	display: inline-block;
+	margin: 4px;
+	align-self: center;
+}
+@media screen and (max-width: 460px) {
+	.info {
+		display: flex;
+		width: 80%;
+	}
+}

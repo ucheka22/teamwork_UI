@@ -1,0 +1,222 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+}
+.container .bg {
+	/* background-color: red; */
+	height: 100px;
+	width: 100%;
+	background: rgb(0, 123, 255);
+	background: linear-gradient(90deg, rgba(0, 123, 255, 1)0%, rgba(23, 162, 184, 1)32%, rgba(40, 167, 69, 1)100%);
+}
+.container .profile {
+	padding-top: 20px;
+	width: 80%;
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+	border-radius: 5px;
+	background-color: #fafdff;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	margin-bottom: 40px;
+}
+.heading {
+	display: flex;
+	width: 80%;
+	padding: 0px 2rem 0px 4rem;
+}
+.heading div {
+	flex: 3;
+}
+.actions {
+	display: flex;
+	width: 80%;
+	padding: 0px 2rem 0px 4rem;
+}
+.actions span {
+	display: inline-block;
+	margin-right: 20px;
+	background-color: var(--info);
+	border-radius: 5px;
+	padding: 5px;
+}
+img {
+	width: 80px;
+	height: 80px;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown .dropBtn {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	color: var(--dark);
+	font-size: 16px;
+	font-weight: 500;
+}
+.dropdown .dropBtn:hover {
+	color: var(--info);
+}
+.dropdown .dropdownContent {
+	display: none;
+	position: absolute;
+	left: 0px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #f9f9f9;
+	min-width: 80px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.dropdown .dropdownContent a {
+	color: black;
+	padding: 6px 10px;
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.dropdown .dropdownContent a:first-child {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.dropdown .dropdownContent a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+}
+.container .posts {
+	display: flex;
+	flex-direction: column;
+}
+.container .posts h3 {
+	margin: 20px 20px 16px;
+	color: var(--info);
+}
+.container .posts ul {
+	margin: 0px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+}
+.container .posts ul li {
+	display: flex;
+	box-shadow: 0px 4px 10px 4px#edf0f1;
+	padding: 10px;
+	width: 60%;
+	margin-bottom: 20px;
+}
+.container .posts ul li p img {
+	width: 160px;
+	height: 100px;
+}
+.container .posts ul li .article {
+	margin-right: 10px;
+}
+.container .posts ul li .article h4 {
+	margin-bottom: 6px;
+	font-size: 1.2rem;
+}
+
+.container .posts ul li .buttons div {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+.container .posts ul li .buttons span:first-child {
+	color: var(--muted);
+}
+.container .posts ul li .buttons div span {
+	display: inline-block;
+	padding: 4px 8px;
+	margin-right: 10px;
+	background-color: #ddd;
+	color: black !important;
+	text-align: center;
+}
+.container .posts ul li .buttons div span:first-child {
+	color: var(--muted);
+}
+.container .posts ul li .buttons div span:nth-child(2) {
+	color: #ff5747;
+}
+@media screen and (max-width: 380px) {
+	.container .profile {
+		width: 94%;
+		top: 50px;
+	}
+}
+@media screen and (max-width: 1090px) {
+	.container .posts ul li {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 830px) {
+	.container .posts ul li {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 660px) {
+	.heading {
+		display: flex;
+		width: 96%;
+		padding: 0px 4px 0px 10px;
+	}
+	.actions {
+		width: 100%;
+		padding: 10px 0px 0px 10px;
+	}
+	.actions span:not(3) {
+		margin-right: 8px;
+		padding: 4px;
+	}
+	img {
+		width: 40px;
+		height: 40px;
+	}
+	.container .posts ul li {
+		width: 100%;
+	}
+	/* .container .posts ul li {
+		flex: 3;
+	} */
+	.reaction {
+		display: none;
+	}
+}
+@media screen and (max-width: 740px) {
+	.container .profile {
+		padding-top: 20px;
+		width: 94%;
+		top: 50px;
+
+		margin-bottom: 40px;
+	}
+	/* .container .posts ul li {
+		width: 80%;
+	} */
+}

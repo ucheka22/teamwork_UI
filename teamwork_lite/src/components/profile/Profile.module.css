@@ -1,0 +1,112 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+}
+.container .bg {
+	/* background-color: red; */
+	height: 100px;
+	width: 100%;
+	background: rgb(0, 123, 255);
+	background: linear-gradient(90deg, rgba(0, 123, 255, 1)0%, rgba(23, 162, 184, 1)32%, rgba(40, 167, 69, 1)100%);
+}
+.container .profile {
+	padding-top: 20px;
+	width: 80%;
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+	border-radius: 5px;
+	background-color: #fafdff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.container .profile .info {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.container .profile .info small {
+	color: var(--success);
+}
+.container .profile .info span {
+	font-size: 18px;
+	font-weight: 500;
+}
+.container .profile .details {
+	width: 90%;
+	border-radius: 5px;
+	padding: 20px 20px;
+	box-shadow: 0px 4px 10px 4px#edf0f1;
+	margin-bottom: 20px;
+}
+.container .profile .details div:first-child {
+	display: flex;
+	margin-bottom: 6px;
+}
+.container .profile .details div:first-child .email {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .profile .details div:first-child .socials span {
+	display: inline-block;
+	margin-right: 10px;
+}
+.container .profile .details div:nth-child(2) span {
+	font-size: 18px;
+	font-weight: 500;
+}
+.container .profile .posts {
+	width: 90%;
+	margin-bottom: 20px;
+}
+.container .profile .posts h3 {
+	color: var(--info);
+	margin-bottom: 10px;
+}
+.container .profile .posts ul li {
+	border-left: 4px solid var(--success);
+	padding-left: 10px;
+	color: var(--darker);
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+.info img {
+	width: 80px;
+	height: 80px;
+}
+.socials img {
+	width: 20px;
+	height: 20px;
+}
+
+@media screen and (max-width: 380px) {
+	.container .profile {
+		width: 94%;
+		top: 50px;
+	}
+}

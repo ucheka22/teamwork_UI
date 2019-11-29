@@ -1,0 +1,62 @@
+:root {
+	--info: #17a2b8;
+	--danger: #dc3545;
+	--primary: #007bff;
+	--success: #28a745;
+	--warning: #ffc107;
+	--light: #f8f9fa;
+	--background-color: #e3f2fd;
+	--dark: #343a40;
+	--muted: #6c757d;
+	--white: #fff;
+	--darker: #333;
+	--btn: #e5be98;
+	--picker: #fcfdfd;
+	--secondary: #6c757d;
+}
+
+.gifBody {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 10px 4px#edf0f1;
+	padding: 10px 0px 10px 10px;
+}
+
+.info {
+	display: flex;
+	width: 40%;
+}
+.info img {
+	width: 24px;
+	height: 24px;
+}
+.info img,
+.info span,
+.info small {
+	display: inline-block;
+	margin: 4px;
+	align-self: center;
+}
+.gifImage {
+	width: 280px;
+	height: 200px;
+	display: block;
+}
+@media screen and (max-width: 460px) {
+	.info {
+		display: flex;
+		width: 80%;
+	}
+	.gifImage {
+		width: 220px;
+		height: 160px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.gifImage {
+		width: 200px;
+		height: 160px;
+	}
+}
