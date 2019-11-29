@@ -77,11 +77,7 @@ function App() {
 				<Route path="/dashboard/:userId" component={Dashboard} />
 				<Route exact path="/gifs/:gifId" component={Gif} />
 				<Route path="/gifs/edit/:gifId" component={EditGif} />
-				{/* 
-				
-		
-				
-				 */}
+
 			</div>
 		</Router>
 	);
