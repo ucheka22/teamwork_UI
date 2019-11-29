@@ -12,7 +12,9 @@ export default function GifList({ id }) {
 				<Link to={`/gifs/${id}`}>The Title of The Gif Goes Here</Link>
 			</h3>
 			<div className={styled.info}>
-				<img src={User} />
+				<Link to={`/profile/1`}>
+					<img src={User} />
+				</Link>
 				<span> John Doe </span> <small> 8 hrs ago</small>
 			</div>
 			<p>

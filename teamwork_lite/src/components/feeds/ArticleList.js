@@ -16,7 +16,9 @@ export default function ArticleList({ id }) {
 					<Link to={`/articles/${id}`}>The Title of The Article Goes Here</Link>
 				</h3>
 				<div className={styled.info}>
-					<img src={User} />
+					<Link to={`/profile/1`}>
+						<img src={User} />
+					</Link>
 					<span> John Doe </span> <small> 8 hrs ago</small>
 				</div>
 				<p>

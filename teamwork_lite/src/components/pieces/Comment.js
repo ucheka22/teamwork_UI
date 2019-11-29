@@ -6,7 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Comment() {
 	return (
 		<div className={styled.comment}>
-			<img src={User} />
+			<Link to={`/profile/1`}>
+				<img src={User} />
+			</Link>
 			<div>
 				<div className={styled.commentBody}>
 					<span className={styled.name}>John Francis</span>

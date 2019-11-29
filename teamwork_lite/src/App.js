@@ -71,9 +71,9 @@ function App() {
 				<Route path="/article" component={PostArticle} />
 				<Route path="/articles/edit/:articleId" component={EditArticle} />
 				<Route path="/gif" component={PostGif} />
+				<Route exact path="/profile/:userId" component={Profile} />
 				<Route path="/profile/edit/:userId" component={Edit} />
 				<Route path="/profile/create" component={CreateProfile} />
-				<Route path="/profile/:userId" component={Profile} />
 				<Route path="/dashboard/:userId" component={Dashboard} />
 				<Route exact path="/gifs/:gifId" component={Gif} />
 				<Route path="/gifs/edit/:gifId" component={EditGif} />

@@ -25,7 +25,9 @@ export default function Dashboard() {
 						<br />
 						<span> Welcome John Doe</span>
 					</div>
-					<img src={User} />
+					<Link to={`/profile/1`}>
+						<img src={User} />
+					</Link>
 				</div>
 				<div className={styled.actions}>
 					<span>

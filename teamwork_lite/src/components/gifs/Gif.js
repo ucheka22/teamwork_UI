@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Reactions from './../feeds/Reactions';
+import { Link } from 'react-router-dom';
 import PostComment from '../pieces/PostComment';
 import Comment from '../pieces/Comment';
 import User from '../../img/user.png';
@@ -14,7 +15,9 @@ export default function Gif() {
 					<div className={styled.gif}>
 						<h3>The Title of The Article Goes Here</h3>
 						<div className={styled.info}>
-							<img src={User} />
+							<Link to={`/profile/1`}>
+								<img src={User} />
+							</Link>
 							<span> John Doe </span> <small> 8 hrs ago</small>{' '}
 							<small>
 								{' '}

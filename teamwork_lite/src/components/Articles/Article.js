@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Reactions from './../feeds/Reactions';
 import PostComment from '../pieces/PostComment';
 import Comment from '../pieces/Comment';
@@ -15,7 +16,9 @@ export default class Article extends Component {
 						<div className={styled.article}>
 							<h3>The Title of The Article Goes Here</h3>
 							<div className={styled.info}>
-								<img src={User} />
+								<Link to={`/profile/1`}>
+									<img src={User} />
+								</Link>
 								<span> John Doe </span> <small> 8 hrs ago</small>{' '}
 								<small>
 									{' '}
