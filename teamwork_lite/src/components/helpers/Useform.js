@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const useForm = (initialValues) => {
 	const [ values, setValues ] = useState(initialValues);
 	const handleChange = (event) => {

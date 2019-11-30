@@ -57,9 +57,8 @@ export default function CreateUser() {
 						</i>
 						<input type="text" placeholder="Address" />
 					</div>
-					<div>
-						<button className={styled.btn}>Create User</button>
-					</div>
+
+					<button className={styled.btn}>Create User</button>
 				</form>
 			</div>
 		</div>

@@ -36,20 +36,24 @@
 }
 .formContainer form {
 	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .formContainer form div {
 	display: flex;
 	width: 100%;
 	border-radius: 3px;
-	border: 1px solid var(--info);
-	margin: 16px 0px;
+	border: 2px solid #e0e0e0;
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 6px 0px;
 }
 .formContainer form div i {
-	padding: 8px 0px;
+	padding: 6px 0px;
 	min-width: 40px;
 	text-align: center;
-	color: var(--info);
+	color: #bdbdbd;
 }
 .formContainer form div input {
 	width: 100%;
@@ -60,16 +64,20 @@
 .formContainer form div input::placeholder {
 	font-size: 0.8rem;
 	font-weight: 500;
-	color: var(--muted);
+	color: #bdbdbd;
 }
+
 .btn {
+	display: block;
+	align-self: center;
 	border: none;
+	border-radius: 5px;
 	outline: none;
-	width: 100%;
-	padding: 4px 4px;
+	width: 7.4rem;
+	padding: 8px 10px;
 	text-align: center;
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 500;
 	background-color: var(--info);
 	transition: 0.5s background-color;
@@ -86,8 +94,13 @@
 	color: var(--muted);
 	text-align: center;
 }
-@media screen and (max-width: 330px) {
+
+@media screen and (max-width: 420px) {
+	.formContainer h2 {
+		font-size: 1.2rem;
+	}
 	.btn {
-		font-size: 1rem;
+		width: 100%;
+		padding: 8px 10px;
 	}
 }

@@ -35,6 +35,7 @@ import {
 	faCommentAlt,
 	faMapMarker
 } from '@fortawesome/free-solid-svg-icons';
+import LandingPage from './components/Layout/LandingPage';
 
 library.add(
 	fab,
@@ -63,6 +64,7 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
+				<Route exact path="/" component={LandingPage} />
 				<Navbar />
 				<Route path="/auth/create-user" component={CreateUser} />
 				<Route path="/auth/signin" component={Signin} />
@@ -77,11 +79,6 @@ function App() {
 				<Route path="/dashboard/:userId" component={Dashboard} />
 				<Route exact path="/gifs/:gifId" component={Gif} />
 				<Route path="/gifs/edit/:gifId" component={EditGif} />
-				{/* 
-				
-		
-				
-				 */}
 			</div>
 		</Router>
 	);

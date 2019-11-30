@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import useForm from '../helpers/Useform';
 import styled from './auth.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -59,9 +60,10 @@ export default function Signin() {
 							}}
 						/>
 					</div>
-					<div>
-						<button className={styled.btn}>Sign In</button>
-					</div>
+
+					<button className={styled.btn}>
+						<Link to="/feeds">SIGN IN </Link>
+					</button>
 
 					<span className={styled.forgottenPassword}>forgotten password ?</span>
 				</form>

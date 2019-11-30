@@ -7,7 +7,7 @@ export default function Navbar() {
 	return (
 		<header className={styled.header}>
 			<div className={styled.log}>
-				<Link to="/home">
+				<Link to="/">
 					<span className={styled.brandTeam}>Team</span>
 					<span className={styled.brandColor}>work</span>
 					<span className={styled.brandDot}>.</span>
