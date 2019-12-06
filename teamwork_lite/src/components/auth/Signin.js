@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { signInUser } from '../../actions/authAction';
 import useForm from '../helpers/Useform';
 import styled from './auth.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Signin() {
-	const initialValues = {
+const Signin = ({ signInUser, location, history }) => {
+	const initialState = {
 		email: '',
 		password: ''
 	};
-	const { values, handleChange, handleSubmit } = useForm(initialValues);
-	const { email, password } = values;
-	// const handleSubmit = (e) => {
-	// 	e.preventDefault();
-	// 	console.log(values);
 
-	// 	// const loginDetails = {
-	// 	// 	email,
-	// 	// 	password
-	// 	// };
-	// 	// console.log(loginDetails);
-	// 	// 	// createUser(user);
-	// 	// 	// history.push('/dashboard/:handle');
-	// 	// 	// setName('');
-	// 	// 	setEmail('');
-	// 	// 	setPassword('');
-	// };
+	const { values, handleChange } = useForm(initialState);
+	const { email, password } = values;
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		signInUser(values, location, history);
+	};
 	return (
 		<div className={styled.container}>
 			<div className={styled.formContainer}>
@@ -61,13 +55,19 @@ export default function Signin() {
 						/>
 					</div>
 
-					<button className={styled.btn}>
-						<Link to="/feeds">SIGN IN </Link>
-					</button>
+					<button className={styled.btn}>SIGN IN</button>
 
 					<span className={styled.forgottenPassword}>forgotten password ?</span>
 				</form>
 			</div>
 		</div>
 	);
-}
+};
+
+Signin.propTypes = {
+	signInUser: PropTypes.func.isRequired
+};
+// const mapStateToProps = (state) => ({
+// 	auth: state.auth
+// });
+export default connect(null, { signInUser })(withRouter(Signin));
