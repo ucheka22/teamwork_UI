@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 import Navbar from './components/Layout/Navbar';
 import Signin from './components/auth/Signin';
@@ -15,6 +17,7 @@ import Dashboard from './components/profile/Dashboard';
 import EditArticle from './components/Articles/EditArticle';
 import Gif from './components/gifs/Gif';
 import EditGif from './components/gifs/EditGif';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -36,6 +39,7 @@ import {
 	faMapMarker
 } from '@fortawesome/free-solid-svg-icons';
 import LandingPage from './components/Layout/LandingPage';
+import PrivateRoute from './components/common/PrivateRoute';
 
 library.add(
 	fab,
@@ -71,9 +75,13 @@ function App() {
 				<Route path="/feeds" component={Feeds} />
 				<Route exact path="/articles/:articleId" component={Article} />
 				<Route path="/article" component={PostArticle} />
-				<Route path="/articles/edit/:articleId" component={EditArticle} />
+
 				<Route path="/gif" component={PostGif} />
-				<Route exact path="/profile/:userId" component={Profile} />
+				<Switch>
+					<PrivateRoute exact path="/profile/:userId" component={Profile} />
+					<PrivateRoute path="/articles/edit/:articleId" component={EditArticle} />
+				</Switch>
+				{/* <Route exact path="/profile/:userId" component={Profile} /> */}
 				<Route path="/profile/edit/:userId" component={Edit} />
 				<Route path="/profile/create" component={CreateProfile} />
 				<Route path="/dashboard/:userId" component={Dashboard} />
