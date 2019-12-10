@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "07331a2e9012bdbd49203ea8bc44af2d",
+    "revision": "830c791c27c426486c8d68717e00fb8b",
     "url": "/teamwork_UI/index.html"
   },
   {
-    "revision": "7b022703f44d07c2df48",
-    "url": "/teamwork_UI/static/css/main.ac73a39a.chunk.css"
+    "revision": "21631eb597ae9e11e8c6",
+    "url": "/teamwork_UI/static/css/main.d135de56.chunk.css"
   },
   {
-    "revision": "ebfe9780cc0d95f0bc12",
-    "url": "/teamwork_UI/static/js/2.da8c93b6.chunk.js"
+    "revision": "c7218759ce92107a4aa9",
+    "url": "/teamwork_UI/static/js/2.d0b74d6d.chunk.js"
   },
   {
-    "revision": "7b022703f44d07c2df48",
-    "url": "/teamwork_UI/static/js/main.3046043f.chunk.js"
+    "revision": "21631eb597ae9e11e8c6",
+    "url": "/teamwork_UI/static/js/main.88528408.chunk.js"
   },
   {
     "revision": "f9f64176a65db12051e4",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/teamwork_UI/static/media/MrBean.c55b2c3b.gif"
   },
   {
-    "revision": "758ffc2c6e47802013b46934a8100082",
-    "url": "/teamwork_UI/static/media/bgImage.758ffc2c.jpg"
+    "revision": "85b4b94707ccce23be96eb1eba7e559b",
+    "url": "/teamwork_UI/static/media/bg2.85b4b947.jpg"
   },
   {
     "revision": "892b3f33789a99517849e9373b4761b6",
