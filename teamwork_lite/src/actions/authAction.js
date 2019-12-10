@@ -1,5 +1,5 @@
 import jwt_decode from 'jwt-decode';
-import { GET_ERRORS, SET_CURRENT_USER } from './types';
+import { GET_ERRORS, SET_CURRENT_USER, SET_AUTH } from './types';
 
 const baseURL = 'https://teamwork-lite.herokuapp.com/api/v1';
 // const baseURL = 'http://localhost:3030/api/v1';
@@ -59,6 +59,18 @@ export const createUser = (userDetails) => (dispatch) => {
 		});
 };
 
+export const setAuth = () => {
+	return {
+		type: SET_AUTH
+	};
+};
+export const signOut = (history) => (dispatch) => {
+	//Remove token from localStorage
+	localStorage.removeItem('jwtToken');
+	// Set current user to {} which will set isAuthenticated to false
+	dispatch(setCurrentUser({}));
+	window.location.href = '/auth/signin';
+};
 export const setCurrentUser = (decodedUser) => {
 	return {
 		type: SET_CURRENT_USER,

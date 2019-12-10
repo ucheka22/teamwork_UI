@@ -14,7 +14,7 @@
 	--picker: #fcfdfd;
 	--secondary: #6c757d;
 }
-.showcase {
+/* .showcase {
 	color: #fff;
 	background-color: #343434;
 	position: relative;
@@ -23,136 +23,62 @@
 }
 .showcase:before {
 	content: '';
-	background: url('../../img/bgImage.jpg') no-repeat center center/cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url('../../img/bg2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.3;
-}
-.showcaseContent {
-	display: flex;
-	flex-direction: column;
+	top: 0px;
+	width: 100vw;
 	height: 100vh;
-}
-.showcaseContent nav {
-	/* height: 100px; */
-	width: 100%;
+	opacity: 0.3;
+} */
+.imageBox {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../img/bg2.jpg') center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	min-height: 100vh;
 	display: flex;
 	/* align-items: center; */
-	z-index: 1;
-	flex: 1;
-	margin-top: 50px;
-	align-self: center;
+	justify-content: center;
 }
-.showcaseContent section {
-	z-index: 1;
-	flex: 5;
-	height: 100%;
+.imageBox .content {
+	max-width: 600px;
+	margin-top: 200px;
 	display: flex;
-	/* background-color: red; */
+	justify-content: center;
 }
-.showcaseContent section .sectionContent {
-	/* width: 600px; */
-	width: 46%;
-	margin: 14% 6rem;
-	padding: 40px;
-	display: flex;
-	flex-direction: column;
-	/* background: red; */
+.imageBox .content div {
+	margin: 0px 20px;
 }
-
-.showcaseContent section .sectionContent h1 {
-	font-size: 1.6rem;
-	margin-bottom: 8px;
-}
-.showcaseContent section .sectionContent p span {
+.imageBox .content p {
 	font-size: 1.2rem;
-	display: block;
+	margin: 5px 0px 10px;
 }
-.showcaseContent section .sectionContent button {
-	background-color: var(--info);
-	width: 5.4rem;
-	display: block;
-	float: right;
-	align-self: flex-end;
-	border: none;
-	outline: none;
-	margin: 20px 10px 0px 0px;
-	padding: 8px 8px;
-	border-radius: 5px;
-	color: var(--light);
-	font-size: 1rem;
-	font-weight: 500;
+.imageBox .content h2 span:nth-child(1) {
+	color: var(--success);
 }
-.showcaseContent section .sectionContent button:hover {
-	background-color: var(--primary);
+.imageBox .content h2 span:nth-child(2) {
+	color: var(--secondary);
 }
-.showcaseContent nav .branding {
-	flex: 2;
-	margin-left: 4rem;
-}
-.showcaseContent nav .branding span {
-	font-size: 1.8rem;
-	font-weight: 500;
-	background: linear-gradient(90deg, #17a2b8, #28a745, #6c757d, #f8f9fa);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.showcaseContent nav div:nth-child(2) {
-	flex: 1;
+.imageBox .navbtn {
+	/* flex: 1; */
+	justify-self: flex-end;
 	text-align: center;
-}
-.btn {
+	display: inline-block;
+	border: 1px solid var(--info);
+	border-radius: 5px;
+	padding: 6px 14px;
+	width: 100px;
 	background-color: var(--info);
-	border: none;
-	outline: none;
-	padding: 12px 14px;
-	border-radius: 8px;
 	color: var(--light);
-	font-size: 0.8rem;
-	font-weight: 500;
-	margin-right: 10px;
 }
-.btn:hover {
-	background-color: var(--primary);
-}
-
-@media screen and (max-width: 800px) {
-	.showcaseContent section .sectionContent {
-		/* width: 600px; */
-		width: 60%;
-		margin: 14% 2rem;
-	}
-}
-@media screen and (max-width: 620px) {
-	.showcaseContent section .sectionContent {
-		width: 80%;
-		margin: 14% 2rem;
-	}
-}
-
-@media screen and (max-width: 490px) {
-	.showcaseContent section .sectionContent {
-		width: 96%;
-		margin: 14% 1rem;
-	}
-}
-@media screen and (max-width: 360px) {
-	.showcaseContent nav {
-		margin-top: 30px;
-	}
-	.showcaseContent nav .branding {
-		margin-left: 1rem;
-	}
-	.btn {
-		padding: 10px 10px;
-		border-radius: 5px;
-
-		font-size: 0.8rem;
-		font-weight: 500;
-		margin-right: 16px;
+@media screen and (max-width: 570px) {
+	.imageBox .content {
+		max-width: 100%;
+		margin-top: 140px;
+		margin: 140px 20px 0px;
 	}
 }

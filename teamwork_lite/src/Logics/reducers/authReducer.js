@@ -1,5 +1,5 @@
 import isEmpty from '../../Logics/utils.js/isEmpty';
-import { SET_CURRENT_USER } from '../../actions/types';
+import { SET_CURRENT_USER, SET_AUTH } from '../../actions/types';
 
 const initialState = {
 	isAuthenticated: false,
@@ -15,6 +15,11 @@ const authReducer = (state = initialState, action) => {
 				isAuthenticated: !isEmpty(action.payload),
 				// redirectToReferrer: !isEmpty(action.payload),
 				user: action.payload
+			};
+		case SET_AUTH:
+			return {
+				...state,
+				isAuthenticated: true
 			};
 		default:
 			return state;

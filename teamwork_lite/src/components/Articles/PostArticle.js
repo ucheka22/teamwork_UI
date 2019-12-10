@@ -21,7 +21,7 @@ const PostArticle = ({ postArticle, history }) => {
 	return (
 		<div className={styled.container}>
 			<div className={styled.formbody}>
-				<h2>Create Post</h2>
+				<h2>Post Article</h2>
 				<form
 					onSubmit={(e) => {
 						handleSubmit(e);

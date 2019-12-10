@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react';
+import FileUploader from '../helpers/ImageUpload';
 import styled from './PostGif.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function EditGif({ typeofFile = 'image' }) {
+	const [ image, setFile ] = useState(null);
 	// * Focus Input Logics
 	const realFile = useRef();
 	const [ isSupported, setIsSupported ] = useState(true);
@@ -35,22 +37,10 @@ function EditGif({ typeofFile = 'image' }) {
 	return (
 		<div className={styled.container}>
 			<div className={styled.formContainer}>
-				<h2>Post Gif</h2>
+				<h2>Edit Gif</h2>
 				<form>
 					<input placeholder="Title" className={styled.input} />
-					<div className={styled.file}>
-						<input
-							ref={realFile}
-							type="file"
-							name="image"
-							onChange={(e) => getFileName(e)}
-							className={styled.realInput}
-						/>
-						<button className={styled.choosebtn} onClick={focusInput}>
-							Choose Gif
-						</button>
-					</div>
-					<small style={showErrorMessage}>Files type should be JPEG,JPG or PNG</small>
+					<FileUploader typeofFile="gif" mimeType="Gif" setFile={(file) => setFile(file)} />
 					<div className={styled.Or}>
 						<span>--OR--</span>
 					</div>
@@ -65,7 +55,7 @@ function EditGif({ typeofFile = 'image' }) {
 						</button>
 					</div>
 					<div style={showFetchedGif} className={styled.showGifs} />
-					<button className={styled.btn}>Post</button>
+					<button className={styled.btn}>EDIT</button>
 				</form>
 			</div>
 		</div>
