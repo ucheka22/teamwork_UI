@@ -10,7 +10,7 @@
 		"@fortawesome/free-solid-svg-icons": "^5.11.2",
 		"@fortawesome/react-fontawesome": "^0.1.7",
 		"d": "^1.0.1",
-		"gh-pages": "^2.1.1",
+		"gh-pages": "^5.0.0",
 		"jwt-decode": "^2.2.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.12.0",
